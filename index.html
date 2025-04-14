@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BidWise Services</title>
+  <script src="https://unpkg.com/tailwindcss-cdn@3.3.4/tailwindcss.js"></script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="bg-slate-900 text-white">
+
+  <!-- Navbar -->
+  <nav class="fixed w-full bg-slate-900 bg-opacity-80 backdrop-blur-lg p-5 top-0 flex justify-between items-center shadow-lg z-50">
+    <h1 class="text-2xl font-bold text-blue-400">BidWise Services</h1>
+    <button id="menu-btn" class="md:hidden text-white text-2xl focus:outline-none">☰</button>
+    <ul class="hidden md:flex space-x-8 text-lg">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#services" class="nav-link">Services</a></li>
+      <li><a href="#reviews" class="nav-link">Reviews</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Mobile Sidebar -->
+  <div id="sidebar" class="fixed inset-0 bg-black bg-opacity-50 hidden z-50">
+    <div class="w-64 bg-slate-800 h-full p-6 transform -translate-x-full transition-transform duration-300" id="sidebar-menu">
+      <button id="close-btn" class="text-white text-2xl absolute right-4 top-4">&times;</button>
+      <ul class="mt-10 space-y-6 text-white text-lg">
+        <li><a href="#home" class="mobile-nav">Home</a></li>
+        <li><a href="#about" class="mobile-nav">About</a></li>
+        <li><a href="#services" class="mobile-nav">Services</a></li>
+        <li><a href="#reviews" class="mobile-nav">Reviews</a></li>
+        <li><a href="#contact" class="mobile-nav">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="home" class="h-screen flex flex-col justify-center items-center text-center px-6 pt-20">
+    <div class="flex flex-col md:flex-row items-center gap-8">
+      <div class="max-w-lg">
+        <h2 class="text-5xl font-extrabold text-blue-400 drop-shadow-lg animate-slide-up">Winning Contracts, Securing Success</h2>
+        <p class="mt-4 text-gray-300 text-lg">
+          With over 3 years of experience, we specialize in bidding for high-value tenders and helping care providers with CQC registration.
+        </p>
+        <a href="#contact" class="mt-6 inline-block px-8 py-3 bg-blue-500 text-lg rounded-xl shadow-lg hover:bg-blue-700 transition">Work With Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-12 bg-slate-800 rounded-xl mx-6 my-10 shadow-lg">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-blue-400 mb-6 text-center">Meet the Expert & His Crew</h2>
+      <div class="flex flex-col md:flex-row items-center gap-8">
+        <div class="flex-1 text-center ">
+          <img src="images/IMG-20250323-WA0112.jpg" alt="Seller" class="object-cover w-40 h-40 mx-auto rounded-full border-4 border-blue-400 shadow-lg" />
+          <h3 class="mt-4 text-2xl font-bold">Bright OE</h3>
+          <p class="text-gray-300 mt-2">Tender Specialist with 3+ years of success in securing contracts.</p>
+        </div>
+        <div class="flex-1 text-center ">
+          <img src="images/IMG-20250305-WA0169.jpg" alt="Crew" class="object-cover w-40 h-40 mx-auto rounded-full border-4 border-blue-400 shadow-lg" />
+          <h3 class="mt-4 text-2xl font-bold">Kelly Natalie</h3>
+          <p class="text-gray-300 mt-2">Dedicated experts in bid preparation and market analysis.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-12 bg-slate-800 rounded-xl mx-6 my-10 shadow-lg">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-blue-400 mb-8 text-center">Our Services</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="p-8">
+          <h3 class="text-2xl font-bold mb-3">Bidding & Securing Tender Contracts</h3>
+          <p class="text-gray-300">
+            We craft compelling bids that showcase your strengths and secure high-value contracts. Our strategic approach and proven track record make us the ideal partner in tendering.
+          </p>
+        </div>
+        <div class="p-8">
+          <h3 class="text-2xl font-bold mb-3">CQC Registration Support</h3>
+          <p class="text-gray-300">
+            Navigating the CQC registration process can be complex. We simplify it for supported living and domiciliary care providers, ensuring compliance and a seamless registration process.
+          </p>
+        </div>
+        <div class="p-8">
+          <h3 class="text-2xl font-bold mb-3">OFSTED Registration</h3>
+          <p class="text-gray-300">
+            Navigating the medical courier process can be complex. We ensure compliance and a seamless registration process.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews & Ratings Section -->
+  <section id="reviews" class="py-12">
+    <div class="max-w-5xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-blue-400 mb-8 text-center">What Our Clients Say</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Review 1 -->
+        <div class="bg-slate-700 p-6 rounded-xl shadow-lg">
+          <div class="flex items-center mb-4">
+            <span class="text-yellow-400 mr-1">★ ★ ★ ★ ★</span>
+            <span class="ml-2 text-gray-300">5.0</span>
+          </div>
+          <p class="text-gray-300">
+            "Outstanding service! They secured our tender contract quickly and professionally."
+          </p>
+          <p class="mt-3 font-bold text-blue-400">- Samuel D.</p>
+        </div>
+        <!-- Review 2 -->
+        <div class="bg-slate-700 p-6 rounded-xl shadow-lg">
+          <div class="flex items-center mb-4">
+            <span class="text-yellow-400 mr-1">★ ★ ★ ★ ☆</span>
+            <span class="ml-2 text-gray-300">4.0</span>
+          </div>
+          <p class="text-gray-300">
+            "Their expertise in CQC registration made a difficult process smooth and stress-free."
+          </p>
+          <p class="mt-3 font-bold text-blue-400">- Samantha R.</p>
+        </div>
+        <!-- Review 3 -->
+        <div class="bg-slate-700 p-6 rounded-xl shadow-lg">
+          <div class="flex items-center mb-4">
+            <span class="text-yellow-400 mr-1">★ ★ ★ ★ ★</span>
+            <span class="ml-2 text-gray-300">5.0</span>
+          </div>
+          <p class="text-gray-300">
+            "Highly recommend! Their approach to bid preparation is innovative and results-driven."
+          </p>
+          <p class="mt-3 font-bold text-blue-400">- Michael T.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section id="contact" class="py-12">
+    <div class="max-w-3xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-blue-400 mb-8 text-center">Get in Touch</h2>
+      <form action="https://formsubmit.co/oluebubebright21@gmail.com" method="POST" class="bg-slate-700 p-8 rounded-xl shadow-lg">
+  <!-- Disable captcha -->
+  <input type="hidden" name="_captcha" value="false">
+  <!-- Redirect after submission -->
+  <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+  <!-- Email subject -->
+  <input type="hidden" name="_subject" value="New Submission from Bidwise Services">
+  <input type="text" name="name" placeholder="Your Name" class="w-full p-3 rounded-lg mb-4 bg-slate-800 text-white" required>
+  <input type="email" name="email" placeholder="Your Email" class="w-full p-3 rounded-lg mb-4 bg-slate-800 text-white" required>
+  <textarea name="message" placeholder="Your Message" class="w-full p-3 rounded-lg mb-4 bg-slate-800 text-white" rows="5" required></textarea>
+  <button type="submit" class="w-full bg-blue-500 px-8 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition">Send Message</button>
+</form>
+      
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-slate-800 p-6 mt-10 text-center text-gray-300">
+    <p>&copy; 2025 BidWise Services. All rights reserved.</p>
+    <div class="mt-4 flex justify-center space-x-6">
+      <a href="https://www.facebook.com/profile.php?id=61570946380277" class="text-blue-400 hover:text-blue-600 transition">Facebook</a>
+    </div>
+    <div class="mt-4 flex justify-center space-x-6">
+      <a href="https://wa.me/+44 7471540008" class="text-blue-400 hover:text-blue-600 transition">WhatsApp</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
